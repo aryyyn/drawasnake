@@ -1,3 +1,6 @@
+print("Pick your color")
+hello = input()
+
 import turtle
 
 screen = turtle.Screen()
@@ -6,7 +9,7 @@ screen.title("Game")
 
 ball = turtle.Turtle()
 ball.shape("circle")
-ball.color("red")
+ball.color(hello)
 ball.shapesize(0.2)
 
 
