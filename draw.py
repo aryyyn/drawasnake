@@ -1,6 +1,12 @@
 print("Pick your color")
 hello = input()
 
+# adding input features
+print("Enter your desired input key for forward movement : "); w = input()
+print("Enter your desired input key for left movement : "); a = input()
+print("Enter your desired input key for backward movement : "); s = input()
+print("Enter your desired input key for right movement : "); d = input()
+
 import turtle
 
 screen = turtle.Screen()
@@ -37,10 +43,10 @@ def ball_down():
 
 
 screen.listen()
-screen.onkeypress(ball_up, "w")
-screen.onkeypress(ball_left, "a")
-screen.onkeypress(ball_right, "d")
-screen.onkeypress(ball_down, "s")
+screen.onkeypress(ball_up, w)
+screen.onkeypress(ball_left, a)
+screen.onkeypress(ball_right, d)
+screen.onkeypress(ball_down, s)
 
 while True:
     screen.update()
